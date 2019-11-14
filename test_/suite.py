@@ -66,7 +66,7 @@ def run_tests(notebook):
         if k > 1:
             print()
 
-        print("[{}]:\nexpr: {}".format(k, v))
+        print("[{}]:\nexpr: {}".format(k, "(hidden)"))
         if v == "pass":
             print("[SKIP] task is not implemented, skipping")
             continue
