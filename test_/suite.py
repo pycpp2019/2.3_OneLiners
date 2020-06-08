@@ -7,8 +7,8 @@ from test_.cases import tests
 
 
 def run_tests(notebook):
-    with open("one-liners.ipynb", "r") as f:
-        notebook = json.loads(f.read())
+    with open("one-liners.ipynb", "rb") as f:
+        notebook = json.loads(f.read().decode("utf-8", errors="ignore"))
 
     oneliners = {}
     imports = []
